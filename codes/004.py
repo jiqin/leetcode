@@ -17,7 +17,7 @@ class Solution(object):
 
         l, r = 0, len(nums1)
         while l <= r:
-            i = (l + r) / 2
+            i = int((l + r) / 2)
             j = mid_count - i
             if i > 0 and nums1[i - 1] > nums2[j]:
                 r = i - 1
@@ -50,7 +50,7 @@ class Solution(object):
             return (lv + rv) / 2.0
 
 
-from my_algorithm.common_test import run_test_cases
+from tools.common_test import run_test_cases
 
 
 run_test_cases(
